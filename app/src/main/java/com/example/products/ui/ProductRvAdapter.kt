@@ -3,8 +3,9 @@ package com.example.products.ui
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.example.products.model.Product
 import com.example.products.databinding.ProductsListBinding
+import com.example.products.model.Comments
+import com.example.products.model.Product
 import com.squareup.picasso.Picasso
 import jp.wasabeef.picasso.transformations.CropCircleTransformation
 
