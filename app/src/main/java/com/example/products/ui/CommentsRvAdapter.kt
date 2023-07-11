@@ -1,4 +1,4 @@
-package com.example.comments.ui
+package com.example.products.ui
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
@@ -8,24 +8,25 @@ import com.squareup.picasso.Picasso
 import jp.wasabeef.picasso.transformations.CropCircleTransformation
 import org.w3c.dom.Comment
 
+
 class CommentsRvAdapter(var comments: List<Comment>):RecyclerView.Adapter<CommentsRvAdapter.CommentsViewHolder>() {
     override fun onCreateViewHolder(
         parent: ViewGroup,
         viewType: Int
-    ):CommentsViewHolder {
+    ): CommentsViewHolder {
         val binding=CommentsListBinding.inflate(LayoutInflater.from(parent.context),parent,false)
         return CommentsViewHolder(binding)
     }
 
-    override fun onBindViewHolder(holder:CommentsViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: CommentsViewHolder, position: Int) {
         val currentComments = comments.get(position)
         val binding = holder.binding
-        binding.tvid.text=currentComments.id.toString()
+        binding.tvid.text=currentComments.toString()
         binding.tvimage.tag=currentComments
-        binding.tvUsername.text=currentComments.userName
-        binding.tvbody.text=currentComments.body
-        binding.tvpostId.text=currentComments.postId.toString()
-        binding.tvuserId.text=currentComments.userId.toString()
+        binding.tvUsername.text=currentComments.toString()
+        binding.tvbody.text=currentComments.toString()
+        binding.tvpostId.text=currentComments.toString()
+        binding.tvuserId.text=currentComments.toString()
 
 
         Picasso

@@ -14,7 +14,7 @@ interface ApiInterface {
     @GET("/products/{id}")
     suspend fun getProducts(@Path("id")productId:Int):Response<Product>
 
-    @GET("/comment")
+    @GET("/comments")
     suspend fun getComments(): Response<CommentsResponse>
     @GET("/comments/{id}")
     suspend fun getComments(@Path("id")commentsId:Int): Response<Comments>

@@ -1,4 +1,4 @@
-package com.example.comments.ui
+package com.example.products.ui
 
 import android.os.Bundle
 import android.widget.Toast
@@ -6,7 +6,7 @@ import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.Comment.viewModel.CommentsViewModel
+import com.example.products.viewModel.CommentsViewModel
 import com.example.products.databinding.ActivityMain2Binding
 
 
